@@ -17,8 +17,8 @@ with a custom domain.
 2. GitHub Pages serves from root; the custom domain is set in repo
    Settings → Pages.
 3. Cloudflare DNS on `mlev.app` has a CNAME record pointing
-   `bingecast` → `mike-levenick.github.io` (DNS-only while GH provisions
-   the TLS cert, optionally flip to proxied afterwards).
+   `bingecast` → `levenick-enterprises.github.io` (DNS-only while GH
+   provisions the TLS cert, optionally flip to proxied afterwards).
 
 ## Editing
 
