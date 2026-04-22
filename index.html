@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Binge Cast</title>
+  <meta name="description" content="A podcast app for bingeing old shows and catching up on favorites.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎧%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fafafa;
+      --fg: #111;
+      --muted: #666;
+      --accent: #d93a5e;
+      --card: #fff;
+      --border: rgba(0,0,0,0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0c0c0d;
+        --fg: #f0f0f0;
+        --muted: #888;
+        --accent: #ff5577;
+        --card: #17171a;
+        --border: rgba(255,255,255,0.08);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem 1.25rem;
+    }
+    main {
+      width: 100%;
+      max-width: 560px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5rem;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Binge Cast</h1>
+      <p class="tagline">Pick an old podcast. Listen from the start. Let the app keep up.</p>
+    </header>
+
+    <section class="card">
+      <h2>Binge mode</h2>
+      <p>Start a show from any episode and let Binge Cast download the next few episodes automatically as you listen through, deleting them when you're done.</p>
+    </section>
+
+    <section class="card">
+      <h2>Standard mode</h2>
+      <p>Or use it like any other podcast app — subscribe, grab new episodes as they drop, clean up as you go.</p>
+    </section>
+
+    <nav class="links">
+      <a href="/privacy/">Privacy Policy</a>
+    </nav>
+
+    <footer>
+      <p>Made by <a href="https://mlev.app">Michael Levenick</a>.</p>
+    </footer>
+  </main>
+</body>
+</html>
