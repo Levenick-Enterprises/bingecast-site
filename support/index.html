@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Binge Cast</title>
-  <meta name="description" content="A podcast app for bingeing old shows and catching up on favorites.">
+  <title>Support · Binge Cast</title>
+  <meta name="description" content="How to get help with Binge Cast.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎧%3C/text%3E%3C/svg%3E">
   <style>
     :root {
@@ -33,30 +33,15 @@
       background: var(--bg);
       color: var(--fg);
       -webkit-font-smoothing: antialiased;
-      line-height: 1.5;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 2rem 1.25rem;
+      line-height: 1.6;
+      padding: 2.5rem 1.25rem;
     }
-    main {
-      width: 100%;
-      max-width: 560px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
+    main { max-width: 640px; margin: 0 auto; }
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      margin: 0 0 0.5rem;
-    }
-    .tagline {
-      color: var(--muted);
-      font-size: 1.1rem;
-      margin: 0;
+      margin: 0 0 1.5rem;
     }
     .card {
       background: var(--card);
@@ -70,56 +55,34 @@
       font-size: 1.1rem;
       font-weight: 600;
     }
-    .card p {
-      margin: 0;
-      color: var(--muted);
-    }
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
+    .card p { margin: 0 0 0.75rem; color: var(--muted); }
+    .card p:last-child { margin-bottom: 0; }
+    a { color: var(--accent); font-weight: 500; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
+    .back {
+      display: inline-block;
+      margin-top: 2rem;
       color: var(--muted);
       font-size: 0.875rem;
     }
+    .back:hover { color: var(--accent); text-decoration: underline; }
   </style>
 </head>
 <body>
   <main>
-    <header>
-      <h1>Binge Cast</h1>
-      <p class="tagline">Pick an old podcast. Listen from the start. Let the app keep up.</p>
-    </header>
+    <h1>Support</h1>
 
     <section class="card">
-      <h2>Binge mode</h2>
-      <p>Start a show from any episode and let Binge Cast download the next few episodes automatically as you listen through, deleting them when you're done.</p>
+      <h2>Found a bug? Have a feature idea?</h2>
+      <p><a href="https://github.com/Levenick-Enterprises/bingecast-site/issues/new">File an issue on GitHub</a> — no account needed for reading, a free GitHub account to post. Please include your iOS version and what you were doing when things went sideways.</p>
     </section>
 
     <section class="card">
-      <h2>Standard mode</h2>
-      <p>Or use it like any other podcast app — subscribe, grab new episodes as they drop, clean up as you go.</p>
+      <h2>Everything else</h2>
+      <p>Email <a href="mailto:support@mlev.app">support@mlev.app</a> for anything that doesn't fit a bug report — licensing questions, App Store review follow-ups, the occasional "thanks, this is cool" message.</p>
     </section>
 
-    <nav class="links">
-      <a href="/support/">Support</a>
-      <a href="/privacy/">Privacy Policy</a>
-    </nav>
-
-    <footer>
-      <p>Made by <a href="https://github.com/mike-levenick/">Michael Levenick</a>.</p>
-    </footer>
+    <a href="/" class="back">← Back to Binge Cast</a>
   </main>
 </body>
 </html>
